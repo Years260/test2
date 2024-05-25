@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器</title>
+
+    <style>
+        h2,h3{
+            color: #b92323;
+            
+        }
+        .myTitle{
+            background-color: bisque;
+        }
+        #header{
+            color: #2d9a03;
+        }
+        *{
+            background-color: antiquewhite;
+            
+        }
+        .father > .son{
+            color: blue;
+        }
+       
+        .father > p{
+            color: #95b61d;
+        }
+        .father p{
+            color: #b92323;
+        }
+        h3 + h4{
+            background-color: blue;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h2>元素选择器</h2>
+    <h3 class="myTitle">类选择器</h3>
+    <h3>类选择器</h3>
+    <h4 id="header">id选择器</h4>    
+    <div class="father">
+        <p class="son" >子元素选择器</p>
+        <div>
+            <p class="grandson">后代选择器示例</p>
+        </div>
+    </div>
+
+    <p>p标签1</p>
+    <h3>相邻兄弟选择器</h3>
+    <p>p标签2</p>
+    <div>box1</div>
+    <div>box2</div>
+    <div>box3</div>
+    <div>box4</div>
+    
+</body>
+</html>
